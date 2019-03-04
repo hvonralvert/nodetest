@@ -1,0 +1,12 @@
+{
+    "saveAndRun": {
+        "commands": [
+          {
+            "match": "\\.js$",
+            "cmd": "node index.js",
+            "useShortcut": false,
+            "silent": true
+          }
+        ]
+      }
+}

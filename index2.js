@@ -5,7 +5,6 @@ var functPeople = require('./PeoplesFunction');
 
 var horseFunct = require('./horse');
 
-RunData();
 
 function Horse(name, size, owner) {
     this.Name = name;
@@ -13,6 +12,9 @@ function Horse(name, size, owner) {
     this.Owner = owner;
 }
 
+PeoplesGlobal=new ClassPeoples.PeoplesClass(Data.PeopleData);
+
+RunData(PeoplesGlobal);
 
 function RunData() {
 
@@ -40,6 +42,9 @@ function RunData() {
         console.log('namie')
         console.log(namie)
     })
+
+    console.log('testar global class');
+    console.log(this.PeoplesGlobal.GetPeople())
 }
 
 
